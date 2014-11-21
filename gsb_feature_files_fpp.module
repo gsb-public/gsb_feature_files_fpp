@@ -27,3 +27,13 @@ function gsb_feature_files_fpp_entity_info_alter(&$entity_info) {
     ),
   );
 }
+/**
+ * Implements template_preprocess_fieldable_panels_pane()
+ */
+function gsb_feature_files_fpp_preprocess_fieldable_panels_pane (&$variables) {
+  if ($variables['elements']['#bundle'] == 'files') {
+    $wrapper = entity_metadata_wrapper($variables['elements']['#entity_type'], $variables['elements']['#element']);
+    // Determine the file container style and set corresponding style class for pane.
+    $variables['classes_array'][] = $wrapper->field_files_style->value();
+  }
+}
