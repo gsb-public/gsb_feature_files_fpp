@@ -43,17 +43,17 @@ function gsb_feature_files_fpp_field_default_field_instances() {
         'active_updating' => 0,
         'file_name' => array(
           'options' => array(
-            'pathauto' => 0,
+            'pathauto' => 1,
             'transliterate' => 0,
           ),
           'value' => '[file:ffp-name-only-original].[file:ffp-extension-original]',
         ),
         'file_path' => array(
           'options' => array(
-            'pathauto' => 0,
+            'pathauto' => 1,
             'transliterate' => 0,
           ),
-          'value' => 'files-fpp/[fieldable_panels_pane:field-files-private-setting]/[fieldable_panels_pane:fpid]',
+          'value' => 'files-fpp/[fieldable_panels_pane:field_files_private_setting]/[fieldable_panels_pane:fpid]',
         ),
         'replace_existing_files' => 1,
         'retroactive_update' => 0,
