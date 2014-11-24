@@ -53,7 +53,7 @@ function gsb_feature_files_fpp_field_default_field_instances() {
             'pathauto' => 1,
             'transliterate' => 0,
           ),
-          'value' => 'files-fpp/[fieldable_panels_pane:field_files_private_setting]/[fieldable_panels_pane:fpid]',
+          'value' => '[fieldable_panels_pane:field_files_private_setting]/files-fpp/[fieldable_panels_pane:fpid]',
         ),
         'replace_existing_files' => 1,
         'retroactive_update' => 0,
