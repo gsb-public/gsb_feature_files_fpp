@@ -37,3 +37,33 @@ function gsb_feature_files_fpp_preprocess_fieldable_panels_pane (&$variables) {
     $variables['classes_array'][] = $wrapper->field_files_style->value();
   }
 }
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter() for node_form().
+ */
+function gsb_feature_files_fpp_form_fieldable_panels_panes_fieldable_panels_pane_content_type_edit_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'fieldable_panels_panes_fieldable_panels_pane_content_type_edit_form' && $form['#bundle'] == 'files') {
+    $form['#after_build'][] = 'gsb_feature_files_fpp_edit_form_alter';
+  }
+}
+
+/**
+ * Hides the Upload buttons on the edit form for the public and private file field collections.
+ */
+function gsb_feature_files_fpp_edit_form_alter($form) {
+  $fred = 'fred';
+  $language = $form['language']['#value'];
+  $file_fields = array(
+    'field_file_unlimited_public',
+    'field_file_unlimited_private'
+  );
+  foreach($file_fields as $name) {
+    foreach($form[$name][$language] as $key => $item) {
+      if (!empty($form[$name][$language][$key]['upload_button'])) {
+        $form[$name][$language][$key]['upload_button']['#prefix'] = '<div class="element-hidden">';
+        $form[$name][$language][$key]['upload_button']['#suffix'] = '</div>';
+      }
+    }
+  }
+  return $form;
+}
