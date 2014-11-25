@@ -51,7 +51,6 @@ function gsb_feature_files_fpp_form_fieldable_panels_panes_fieldable_panels_pane
  * Hides the Upload buttons on the edit form for the public and private file field collections.
  */
 function gsb_feature_files_fpp_edit_form_alter($form) {
-  $fred = 'fred';
   $language = $form['language']['#value'];
   $file_fields = array(
     'field_file_unlimited_public',
