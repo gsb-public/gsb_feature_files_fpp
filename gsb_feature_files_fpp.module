@@ -58,7 +58,7 @@ function gsb_feature_files_fpp_edit_form_alter($form) {
   );
   foreach($file_fields as $name) {
     foreach($form[$name][$language] as $key => $item) {
-      if (!empty($form[$name][$language][$key]['upload_button'])) {
+      if (is_numeric($key) && !empty($form[$name][$language][$key]['upload_button'])) {
         $form[$name][$language][$key]['upload_button']['#prefix'] = '<div class="element-hidden">';
         $form[$name][$language][$key]['upload_button']['#suffix'] = '</div>';
       }
