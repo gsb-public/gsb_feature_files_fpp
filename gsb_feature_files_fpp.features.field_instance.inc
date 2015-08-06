@@ -10,7 +10,8 @@
 function gsb_feature_files_fpp_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'fieldable_panels_pane-files-field_file_unlimited_private'
+  // Exported field_instance:
+  // 'fieldable_panels_pane-files-field_file_unlimited_private'
   $field_instances['fieldable_panels_pane-files-field_file_unlimited_private'] = array(
     'bundle' => 'files',
     'custom_add_another' => '',
@@ -38,7 +39,7 @@ function gsb_feature_files_fpp_field_default_field_instances() {
       'custom_remove' => '',
       'description_field' => 1,
       'file_directory' => '',
-      'file_extensions' => 'pdf doc docx xlsx xls ppt pptx txt odf ods odp',
+      'file_extensions' => 'pdf doc docx xlsx xls ppt pptx txt odf ods odp zip',
       'filefield_paths' => array(
         'active_updating' => 0,
         'file_name' => array(
@@ -66,7 +67,6 @@ function gsb_feature_files_fpp_field_default_field_instances() {
       'active' => 1,
       'module' => 'file',
       'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
@@ -75,7 +75,8 @@ function gsb_feature_files_fpp_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'fieldable_panels_pane-files-field_file_unlimited_public'
+  // Exported field_instance:
+  // 'fieldable_panels_pane-files-field_file_unlimited_public'
   $field_instances['fieldable_panels_pane-files-field_file_unlimited_public'] = array(
     'bundle' => 'files',
     'custom_add_another' => '',
@@ -103,7 +104,7 @@ function gsb_feature_files_fpp_field_default_field_instances() {
       'custom_remove' => '',
       'description_field' => 1,
       'file_directory' => '',
-      'file_extensions' => 'pdf doc docx xlsx xls ppt pptx txt odf ods odp',
+      'file_extensions' => 'pdf doc docx xlsx xls ppt pptx txt odf ods odp zip',
       'filefield_paths' => array(
         'active_updating' => 0,
         'file_name' => array(
@@ -131,7 +132,6 @@ function gsb_feature_files_fpp_field_default_field_instances() {
       'active' => 1,
       'module' => 'file',
       'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
@@ -140,7 +140,8 @@ function gsb_feature_files_fpp_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'fieldable_panels_pane-files-field_files_private_setting'
+  // Exported field_instance:
+  // 'fieldable_panels_pane-files-field_files_private_setting'
   $field_instances['fieldable_panels_pane-files-field_files_private_setting'] = array(
     'bundle' => 'files',
     'custom_add_another' => '',
@@ -174,6 +175,7 @@ function gsb_feature_files_fpp_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
+        'checkall' => FALSE,
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_buttons',
