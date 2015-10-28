@@ -42,7 +42,7 @@ function gsb_feature_files_fpp_preprocess_fieldable_panels_pane (&$variables) {
  * Implements hook_form_BASE_FORM_ID_alter() for node_form().
  */
 function gsb_feature_files_fpp_form_fieldable_panels_panes_fieldable_panels_pane_content_type_edit_form_alter(&$form, &$form_state, $form_id) {
-  if ($form_id == 'fieldable_panels_panes_fieldable_panels_pane_content_type_edit_form' && $form['#bundle'] == 'files') {
+  if ($form_id == 'fieldable_panels_panes_fieldable_panels_pane_content_type_edit_form' && !empty($form['#bundle']) && $form['#bundle'] == 'files') {
     $form['#after_build'][] = 'gsb_feature_files_fpp_edit_form_alter';
   }
 }
