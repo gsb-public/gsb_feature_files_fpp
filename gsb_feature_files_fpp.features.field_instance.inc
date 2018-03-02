@@ -11,7 +11,7 @@ function gsb_feature_files_fpp_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
-  // 'fieldable_panels_pane-files-field_file_unlimited_private'
+  // 'fieldable_panels_pane-files-field_file_unlimited_private'.
   $field_instances['fieldable_panels_pane-files-field_file_unlimited_private'] = array(
     'bundle' => 'files',
     'custom_add_another' => '',
@@ -76,7 +76,7 @@ function gsb_feature_files_fpp_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'fieldable_panels_pane-files-field_file_unlimited_public'
+  // 'fieldable_panels_pane-files-field_file_unlimited_public'.
   $field_instances['fieldable_panels_pane-files-field_file_unlimited_public'] = array(
     'bundle' => 'files',
     'custom_add_another' => '',
@@ -141,7 +141,7 @@ function gsb_feature_files_fpp_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'fieldable_panels_pane-files-field_files_private_setting'
+  // 'fieldable_panels_pane-files-field_files_private_setting'.
   $field_instances['fieldable_panels_pane-files-field_files_private_setting'] = array(
     'bundle' => 'files',
     'custom_add_another' => '',
@@ -184,7 +184,7 @@ function gsb_feature_files_fpp_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'fieldable_panels_pane-files-field_files_style'
+  // Exported field_instance: 'fieldable_panels_pane-files-field_files_style'.
   $field_instances['fieldable_panels_pane-files-field_files_style'] = array(
     'bundle' => 'files',
     'custom_add_another' => '',
@@ -227,7 +227,7 @@ function gsb_feature_files_fpp_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'fieldable_panels_pane-files-field_title'
+  // Exported field_instance: 'fieldable_panels_pane-files-field_title'.
   $field_instances['fieldable_panels_pane-files-field_title'] = array(
     'bundle' => 'files',
     'custom_add_another' => '',
